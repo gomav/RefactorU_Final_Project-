@@ -36,4 +36,3 @@ var spinner = logo.addComponent({
 
 // Let the magic begin...
 logo.requestUpdate(spinner);
-FamousEngine.init();

@@ -116,6 +116,14 @@ app.get('/applicant/:ID', function(req, res){
 	});
 });
 
+app.delete('/applicant/:ID', function(req, res){
+	var user = req.params.ID;
+	console.log(user);
+	Applicant.findByIdAndRemove(user, function(err, result){
+		res.send(result);
+	});
+});
+
 // creates a new menu Item
 app.post('/item', function(req, res){
   console.log(req.body);

@@ -96,7 +96,7 @@ myApp.controller('applicantsController', function($scope, $http) {
   };
 });
 
-myApp.controller('applicantController', function($scope, $http, $routeParams) {
+myApp.controller('applicantController', function($scope, $http, $routeParams, $location) {
   $scope.applicant = {};
   var getApplicant = function(){
     var id = $routeParams.id;
@@ -110,4 +110,16 @@ myApp.controller('applicantController', function($scope, $http, $routeParams) {
     });
   };
   getApplicant();
+  $scope.deleteApplicant = function(id){
+    console.log(id);
+    $http.delete('/applicant/' + id)
+    .success(function(data){
+      console.log(data);
+      $location.path('applicants');
+    })
+    .error(function(data){
+      console.log(data);
+
+    });
+  };
 });

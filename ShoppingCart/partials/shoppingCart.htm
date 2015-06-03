@@ -28,7 +28,7 @@
 
                 <!-- cart items -->
                 <tr ng-repeat="product in cart.items | orderBy:'name'">
-                    <td>{{product.title}}</td>
+                    <td>{{product.name}}</td>
                     <td class="tdCenter">
                       <div class="input-append">
                         <!-- use type=tel instead of  to prevent spinners -->
@@ -39,16 +39,16 @@
                         <button
                             class="btn btn-success" type="button"
                             ng-disabled="product.quantity >= 1000"
-                            ng-click="cart.addItem(product.sku, product.title, product.cost, +1)">+</button>
+                            ng-click="cart.addItem(product.sku, product.name, product.price, +1)">+</button>
                         <button
                             class="btn btn-inverse" type="button"
                             ng-disabled="product.quantity <= 1"
-                            ng-click="cart.addItem(product.sku, product.title, product.cost, -1)">-</button>
+                            ng-click="cart.addItem(product.sku, product.name, product.price, -1)">-</button>
                       </div>
                     </td>
-                    <td class="tdRight">{{product.cost * product.quantity | currency}}</td>
+                    <td class="tdRight">{{product.price * product.quantity | currency}}</td>
                     <td class="tdCenter" title="remove from cart">
-                        <a href="" ng-click="cart.addItem(product.sku, product.title, product.cost, -10000000)" >
+                        <a href="" ng-click="cart.addItem(product.sku, product.name, product.price, -10000000)" >
                             <i class="icon-remove" />
                         </a>
                     </td>
@@ -69,7 +69,7 @@
             <p class="text-info">
                 <button
                     class="btn btn-block"
-                    onclick="window.location.href='default.htm'">
+                    onclick="window.location.hash='#/store'">
                     <i class="icon-chevron-left" /> Return to order
                 </button>
                 <button
