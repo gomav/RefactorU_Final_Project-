@@ -1,0 +1,36 @@
+
+/*!
+ * Extend Bootstrap v2.3.1 to provide cell alignment (doh)
+ *
+ */
+.table td.tdRight {
+  text-align: right;
+}
+.table td.tdCenter {
+  text-align: center;
+}
+.table-nonfluid {
+   width: auto;
+}
+.well2 {
+
+  background-color: grey;
+}
+.well {
+  background-color: peru;
+}
+/*.wrapper {
+  border: 5px #e4e4e4 solid;
+  padding: 120px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px #ccc;
+  background-color: #fff;
+
+}*/
+.mierda > div, .span8> div .span4 > div
+{
+   padding: 10px;
+   background-color:#eee;
+   border: 1px solid #888;
+   border-radius:10px;
+}

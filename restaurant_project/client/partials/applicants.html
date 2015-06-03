@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Applicants:</h1>
+  <ul ng-repeat = 'applicant in allApplicants' id="applications" class="list-unstyled">
+    <li>
+      <h3><a href="/#/applicant/{{applicant._id}}" class="btn btn-warning btn-lg">{{applicant.name}}</a></h3>
+      <h4>{{applicant.name}} is applying for a position as:</h4>
+      <p>{{applicant.position}}</p>
+      <h6><em>Years of Experience: {{applicant.years}}</em></h6>
+      <h4><strong>About {{applicant.name}}</strong></h4>
+      <p>{{applicant.bio}}</p>
+      <h4>Skills:</h4>
+      <p>
+        <ul>
+          <li></li>
+        </ul>
+      </p>
+      <h4>Why {{applicant.name}} wants to work here:</h4>
+      <p>{{applicant.why}}</p>
+      <h4>URL to personal video:</h4><a>{{applicant.url}}</a><br/><br/><a ng-click= "deleteApplicant(applicant._id)" class="btn btn-danger">Delete this Applicant</a><br/><br/>
+    </li>
+  </ul>
+</div>

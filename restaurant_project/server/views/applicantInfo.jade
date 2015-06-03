@@ -1,0 +1,30 @@
+
+extends layout
+
+block content
+.container
+	h1 Applicant:
+	ul#applications.list-unstyled
+		for user in userObject
+			h3 EQUALS user.name
+			h4 Position USER.POSITION is applying for a position as: 
+			p EQUALS user.position
+			h6: em Years of Experience: USER.YEARS
+			h4: strong About USER.NAME
+			p EQUALS user.bio
+			h4 Skills:
+			p
+				ul
+					for skill in user.skills
+						li EQUALS skill
+			h4 Why USER.NAME wants to work here:
+			p EQUALS user.why
+			h4 URL to personal video:
+			a EQUALS user.url
+			br
+			br
+			iframe(src='/ViewerJS/#../USER.DOCUMENT.PATH' width='400' height='300' allowfullscreen='' webkitallowfullscreen='')
+			p
+			a(href='/delete/USER.ID' class='btn btn-danger') Delete this Applicant
+			p
+			a(href='/applicants' class='btn btn-success') Return to list of Applicants

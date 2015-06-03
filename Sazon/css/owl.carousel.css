@@ -1,0 +1,239 @@
+.car_div {
+}
+
+#owl {
+	overflow: hidden;
+	padding: 0px 35px 0px;
+	position: relative;
+	z-index: 1;
+	margin: 0px 0px 25px;
+	top: -50px;
+}
+
+#owl .owl-item {
+	float: left;
+	width: 100%;
+}
+
+#owl .item {
+	position: relative;
+	text-align: center;
+	padding: 0 0px 24px;
+	text-align: left;
+	font: 14px/20px 'Patua One', cursive;
+	color: #f48c40;
+}
+
+#owl .item img {
+	position: relative;
+	top: 0;
+	-webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+#owl .item:hover img  {
+
+    position: relative;
+    top: -50px;
+}
+
+#owl .item:hover img {
+
+	
+}
+
+#owl .item:hover>div {
+	bottom: 0px !important;
+
+}
+
+#owl .item>div {
+	position: absolute;
+	bottom: 24px;
+	padding-bottom: 15px;
+	left: 0;
+	text-align: center;
+	border-bottom: 4px solid #f48c40;
+	right: 0;
+	-webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+#owl .item span {
+	margin-top: -2px;
+	display: block;
+	font-size: 18px;
+}
+
+#owl .item a:hover{
+	color: #353031;
+}
+
+
+#owl .item img{
+	position: relative;
+	z-index: 100;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+
+}
+
+#owl .item:hover img {
+	border-color: #bc493a;
+}
+
+.owl-wrapper-outer {
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+#owl .owl-prev, #owl .owl-next {
+	cursor: pointer;
+	position: absolute;
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	left: 12px;
+	display: block;
+	height: 19px;
+	width: 11px;
+	top: 50%;
+	margin-top: 3px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+#owl .owl-next {
+	right: 12px;
+	left: auto;
+	background-position: right bottom;
+}
+
+#owl .owl-next:hover {
+	background-position: right 0;
+}
+
+
+
+#owl .owl-prev:hover {
+	background-position: 0 bottom;
+}
+
+
+/* Owl content */
+
+
+
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-perspective: 1000;
+}
+
+
+.car_div {
+}
+
+#owl1 {
+	overflow: hidden;
+	position: relative;
+	margin: 0 0px 0px;
+	padding: 0 0px 81px;
+	color: #7c7777;
+}
+
+#owl1.owl1 {
+	position: relative;
+	top: -2px;
+	padding-bottom: 72px;
+}
+
+#owl1.owl1 .item:after {
+	display: none;
+}
+
+#owl1.owl1 img {
+	margin-bottom: 25px;
+}
+
+#owl1 time {
+	display: block;
+	font: 24px/18px 'Patua One', cursive;
+	color: #f48c40;
+	margin-bottom: 17px;
+}
+
+#owl1 .owl-item {
+	float: left;
+	width: 100%;
+}
+
+
+
+#owl1 .item {
+	overflow: hidden;
+	padding: 0 10px 24px;
+	position: relative;
+	text-align: left;
+}
+
+#owl1 .item span {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: -4px;
+	right: 10px;
+	height: 4px;
+	bottom: -39px;
+	background-color: #f48c40;
+	-webkit-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+#owl1 .item:hover span {
+	bottom: 0;
+}
+
+#owl1 .owl-wrapper-outer {
+	overflow: visible;
+	padding-top: 0;
+}
+
+
+#owl1 .owl-prev, #owl1 .owl-next {
+	cursor: pointer;
+	position: absolute;
+	background: url(../images/prevnext1.png) 0 0 no-repeat;
+	left: 50%;
+	margin-left: -20px;
+	display: block;
+	height: 19px;
+	bottom: 40px;
+
+	width: 11px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+#owl1 .owl-next {
+	right: 50%;
+	left: auto;
+	margin-left: 0;
+	margin-right: -20px;
+	background-position: right bottom;
+}
+
+
+
+#owl1 .owl-next:hover {
+	background-position: right 0;
+}
+
+
+
+#owl1 .owl-prev:hover {
+	background-position: 0 bottom;
+}

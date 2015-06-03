@@ -1,0 +1,31 @@
+extends layout
+
+block content
+.container
+	h1 Sazón Peruvian Restaurant
+	h2 Application for: 
+	h3 Executive Chef | Sous Chef | Line Cook
+	a(class = "current-applicants" href='/applicants') Current Applicants
+	p
+	form#application-form(action="/applicant" method="post" enctype='multipart/form-data')
+		.form-group
+			input.form-control(name="name" type="text" placeholder="Name" required=true)
+		.form-group
+			input.form-control(name="position" type="text" placeholder="Desired Position" required=true)
+		.form-group
+			textarea.form-control(name="bio" rows="5" placeholder="Bio" required=true)
+		.form-group
+			textarea.form-control(name="skills" rows="3" placeholder="Skills (Separate skills by comma)" required=true)
+		.form-group
+			input.form-control(name="years" type="number" placeholder="Years of experience" required=true)
+		.form-group
+			textarea.form-control(name="why" rows="5" placeholder="Why do you want to work here?" required=true)
+		.form-group
+			input.form-control(name="url" rows="5" placeholder="Personal Video URL" required=true)
+		.form-group
+				input(type="file" name="userDocument")
+				p
+				input(type="submit" value="Submit Résumé" name="submit")
+				h6 &nbsp;Only submit PDF files!
+
+			

@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="admin">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Console</title>
+  <!-- styles -->
+  <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="file:///Users/JMNavarro/RefactorU/Final/Sazon/index.html">Sazón</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="http://localhost:2600/default.htm#/store">Order Online viewer<span class="sr-only">(current)</span></a></li>
+          <!-- <li><a href="#">Link</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Employment <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/#/management" id="navbar" class="btn btn-default">Management Staff</a></li>
+              <li><a href="/#/kitchen" id="navbar" class="btn btn-default">Kitchen Staff</a></li>
+              <li><a href="/#/floor" id="navbar" class="btn btn-default">Floor Staff</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-left">
+          <li class="dropdown navbar-right">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Admin <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/#/applicants" id="navbar" class="btn btn-default">Applicants</a></li>
+              <li><a href="/#/items" id="navbar" class="btn btn-default">Items</a></li>
+              <li><a href="http://localhost:2600/default.htm#/menu" id="navbar" class="btn btn-default">Menu Items</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div ng-view></div>
+
+
+  <!-- scripts -->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+  <script src="/javascripts/client.js"></script>
+
+</body>
+</html>

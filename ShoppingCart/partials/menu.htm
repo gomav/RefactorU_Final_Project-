@@ -1,0 +1,48 @@
+<p class="text-info">
+    <h3>Lunch Menu editor</h3>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<form ng-submit="addItem()" class="well">
+  <div class="form-group">
+    <input type="text" placeholder="Food Item Title..." ng-model="newItem.title" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <input type="text" placeholder="Food Item Description..." ng-model="newItem.description" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <input type="text" placeholder="Food Item price..." ng-model="newItem.cost" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <input type="file" name="img" placeholder="Food Item Image..." ng-model="newItem.image" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Add Item" class="btn btn-primary"/>
+  </div>
+</form>
+<input type="text" placeholder="Search for existing items" ng-model="search"/>
+<div ng-repeat="item in items | filter: search" class="news-item row">
+  <newsitem news="item"></newsitem>
+</div>
+
+<table class="table table-bordered">
+    <tr class="well2">
+      <td class="tdRight" colspan="4"></td>
+    </tr>
+    <tr ng-repeat="product in store | orderBy:'title' | filter:search" >
+        <td class="tdCenter"><img ng-src="img/products/{{product.sku}}.jpg" alt="{{product.title}}" /></td>
+        <td>
+            <a href="#/products/{{product.sku}}"><b>{{product.title}}</b></a><br />
+            {{product.description}}
+        </td>
+        <td class="tdRight">
+            {{product.cost | currency}}
+        </td>
+    </tr>
+    <tr class="well2">
+        <td class="tdRight" colspan="4"></td>
+
+            <!-- <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+                <i class="icon-shopping-cart" /> -->
+            </a>
+    </tr>
+</table>

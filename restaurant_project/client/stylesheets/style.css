@@ -1,0 +1,73 @@
+body {
+  font: 14px "Helvetica-Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn btn-alert a{
+  color: red;
+}
+
+.navbar-brand {
+  color: peru;
+  align: center;
+}
+
+h1 {
+  text-align: center;
+  color: peru;
+}
+
+h3 {
+  text-align: left;
+  color: peru;
+}
+
+.current-applicants {
+  color: peru;
+}
+
+.navbar{
+  background-color: peru;
+  color: white;
+}
+
+#navbar{
+  background-color: peru;
+  color: white;
+}
+
+.navbar-brand{
+  color: white;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 3px;
+
+}
+
+.dropdown-toggle {
+  color: white;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: peru;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: peru;
+    color: white;
+}
+
+h6 {
+  color: grey;
+}
+
+.bs-example{
+  margin: 20px;
+  color: black;
+}

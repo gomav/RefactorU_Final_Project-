@@ -1,0 +1,29 @@
+extends layout
+
+block content
+.container
+	h1 Items:
+	ul#items.list-unstyled
+		for item in items
+			li
+				h3: a(href='/#{applicant._id}' class='btn btn-warning btn-lg')= applicant.name
+				h4 #{applicant.name} is applying for a position as:
+				p= applicant.position
+				h6: em Years of Experience: #{applicant.years}
+				h4: strong About #{applicant.name}
+				p= applicant.bio
+				h4 Skills:
+				p
+					ul
+						for skill in applicant.skills
+							li= skill
+				h4 Why #{applicant.name} wants to work here:
+				p= applicant.why
+				h4 URL to personal video:
+				a= applicant.url
+				br
+				br
+				a(href='/delete/#{applicant._id}' class='btn btn-danger') Delete this Applicant
+				br
+				br
+					

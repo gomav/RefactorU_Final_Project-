@@ -1,0 +1,11 @@
+
+
+ul.list2 .count {behavior:url(js/PIE.htc); position:relative;}
+
+a.corner:hover {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+}
+
+a.gal:hover img {
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}

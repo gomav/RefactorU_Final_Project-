@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Sazón Peruvian Restaurant</h1>
+  <div ng-if="message">
+    <div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      {{message}}
+    </div>
+  </div>
+  <h2>Application for: </h2>
+  <h3>Executive Chef | Sous Chef | Line Cook | Dishwasher</h3><a href="/#/applicants" class="current-applicants">Current Applicants</a>
+  <p></p>
+  <form id="application-form" enctype="multipart/form-data" ng-submit='kitchenFormSubmit()'>
+    <div class="form-group">
+      <input name="name" type="text" placeholder="Name" required="required" class="form-control" ng-model="kitchenForm.name"/>
+    </div>
+    <div class="form-group">
+      <input name="position" type="text" placeholder="Desired Position" required="required" class="form-control" ng-model="kitchenForm.position"/>
+    </div>
+    <div class="form-group">
+      <textarea name="bio" rows="5" placeholder="Bio" required="required" class="form-control" ng-model="kitchenForm.bio"></textarea>
+    </div>
+    <div class="form-group">
+      <textarea name="skills" rows="3" placeholder="Skills (Separate skills by comma)" required="required" class="form-control" ng-model="kitchenForm.skills"></textarea>
+    </div>
+    <div class="form-group">
+      <input name="years" type="number" placeholder="Years of experience" required="required" class="form-control" ng-model="kitchenForm.years"/>
+    </div>
+    <div class="form-group">
+      <textarea name="why" rows="5" placeholder="Why do you want to work here?" required="required" class="form-control" ng-model="kitchenForm.why"></textarea>
+    </div>
+    <div class="form-group">
+      <input name="url" rows="5" placeholder="Personal Video URL" required="required" class="form-control" ng-model="kitchenForm.url"/>
+    </div>
+    <div class="form-group">
+      <input type="file" name="userDocument"/>
+      <p></p>
+      <input type="submit" value="Submit Résumé" name="submit"/>
+      <h6>&nbsp;Only submit PDF files!</h6>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Applicant:</h1>
+  <ul id="applications" class="list-unstyled">
+    <h3>EQUALS user.name</h3>
+    <h4>Position USER.POSITION is applying for a position as: </h4>
+    <p>EQUALS user.position</p>
+    <h6><em>Years of Experience: USER.YEARS</em></h6>
+    <h4><strong>About USER.NAME</strong></h4>
+    <p>EQUALS user.bio</p>
+    <h4>Skills:</h4>
+    <p>
+      <ul>
+        <li>EQUALS skill</li>
+      </ul>
+    </p>
+    <h4>Why USER.NAME wants to work here:</h4>
+    <p>EQUALS user.why</p>
+    <h4>URL to personal video:</h4><a>EQUALS user.url</a><br/><br/>
+    <iframe src="/ViewerJS/#../USER.DOCUMENT.PATH" width="400" height="300" allowfullscreen="" webkitallowfullscreen=""></iframe>
+    <p></p><a href="/delete/USER.ID" class="btn btn-danger">Delete this Applicant</a>
+    <p></p><a href="/applicants" class="btn btn-success">Return to list of Applicants</a>
+  </ul>
+</div>
